@@ -34,6 +34,7 @@ public class Main {
             ArrayList<Partido> partidos = servicioXML.leerPartidos(ELECCIONES_INPUT_FILE, UMBRAL_PORCENTAJE);
 
             IPersistencia objectPersistencia = new PartidoObjectPersistencia();
+
             objectPersistencia.escribir(partidos, ELECCIONES_OUTPUT_FILE);
 
             partidos = objectPersistencia.leerTodo(ELECCIONES_OUTPUT_FILE);

@@ -25,7 +25,13 @@ import org.xml.sax.SAXException;
  * @author maria
  */
 public class DOMXMLService implements IXMLService {
-
+/***
+ * 
+ * @param ruta ruta al fichero XML que se leerá
+ * @param umbral porcentaje mínimo  de votos para obtener ser incluido en el resultado
+ * @return ArrayList<Partido> que superan el umbral 
+ * @throws LecturaException en caso de que surja cualquier excepción durante la lectura
+ */
     @Override
     public ArrayList<Partido> leerPartidos(String ruta, float umbral) throws LecturaException {
         try {
