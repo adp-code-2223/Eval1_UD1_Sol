@@ -5,7 +5,6 @@
 package es.teis.data;
 
 import es.teis.model.Partido;
-import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -68,7 +67,7 @@ public class PartidoObjectPersistencia implements IPersistencia {
         } catch (IOException ex) {
             Logger.getLogger(PartidoObjectPersistencia.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         return partidos;
 
     }
