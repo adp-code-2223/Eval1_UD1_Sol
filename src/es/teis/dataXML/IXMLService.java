@@ -6,10 +6,7 @@ package es.teis.dataXML;
 
 import es.teis.data.exceptions.LecturaException;
 import es.teis.model.Partido;
-import java.io.IOException;
 import java.util.ArrayList;
-import javax.xml.parsers.ParserConfigurationException;
-import org.xml.sax.SAXException;
 
 /**
  *
