@@ -74,7 +74,7 @@ public class DOMXMLService implements IXMLService {
             }
             return partidos;
 
-        } catch (ParserConfigurationException | SAXException | IOException ex) {
+        } catch (Exception ex) {
             throw new LecturaException(ex.getMessage(), ruta);
         }
     }
