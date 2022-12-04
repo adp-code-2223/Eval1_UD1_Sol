@@ -19,10 +19,10 @@ import es.teis.dataXML.IXMLService;
  */
 public class Main {
 
-    private static String ELECCIONES_INPUT_FILE = Paths.get("src", "docs", "elecciones.xml").toString();
-    private static String ELECCIONES_OUTPUT_FILE = Paths.get("src", "docs", "elecciones_output.dat").toString();
+    private static final String ELECCIONES_INPUT_FILE = Paths.get("src", "docs", "elecciones.xml").toString();
+    private static final String ELECCIONES_OUTPUT_FILE = Paths.get("src", "docs", "elecciones_output.dat").toString();
 
-    private static float UMBRAL_PORCENTAJE = 3;
+    private static final float UMBRAL_PORCENTAJE = 3;
 
     /**
      * @param args the command line arguments
