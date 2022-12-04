@@ -40,13 +40,13 @@ public class PartidoObjectPersistencia implements IPersistencia {
 
     @Override
     public ArrayList<Partido> leerTodo(String ruta) {
-        boolean EOF = false;
+        boolean eof = false;
 
         ArrayList<Partido> partidos = new ArrayList<>();
         try (
                  FileInputStream fis = new FileInputStream(ruta);  ObjectInputStream ois = new ObjectInputStream(fis);) {
 
-            while (!EOF) {
+            while (!eof) {
                 try {
                     Object o = ois.readObject();
 
@@ -55,17 +55,18 @@ public class PartidoObjectPersistencia implements IPersistencia {
                         partidos.add(partido);
 
                     }
-                } catch (EOFException eof) {
-                    EOF = true;
+                } catch (EOFException eofex) {
+                    eof = true;
                 } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(PartidoObjectPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+                    System.err.println("Ha ocurrido una excepción: " + ex.getMessage()
+                    );
                 }
 
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(PartidoObjectPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("Ha ocurrido una excepción: " + ex.getMessage());
         } catch (IOException ex) {
-            Logger.getLogger(PartidoObjectPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("Ha ocurrido una excepción: " + ex.getMessage());
         }
 
         return partidos;
