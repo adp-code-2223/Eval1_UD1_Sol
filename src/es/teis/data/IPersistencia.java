@@ -15,6 +15,6 @@ public interface IPersistencia {
 
     void escribir(ArrayList<Partido> partidos, String ruta);
 
-    ArrayList<Partido> leerTodo(String ruta);
+
 
 }

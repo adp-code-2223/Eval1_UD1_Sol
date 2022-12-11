@@ -21,11 +21,8 @@ public class CSVPersistencia implements IPersistencia {
 
         try ( FileWriter fw = new FileWriter(ruta);  BufferedWriter bf = new BufferedWriter(fw);) {
 
-           
-
             String cadenaCSV = partidosListToCSVIds(partidos);
-            
-            
+
             bf.write(cadenaCSV);
         } catch (IOException ex) {
             System.err.println("Ha ocurrido una excepción: " + ex.getMessage());
@@ -33,15 +30,15 @@ public class CSVPersistencia implements IPersistencia {
 
     }
 
-    @Override
-    public ArrayList<Partido> leerTodo(String ruta) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-/**
- * Recibe una lista de objetos Partido, obtiene sus ids y los convierte a cadena de texto separados por comas
- * @param partidos
- * @return una lista separada por comas de los ids de los partidos 
- */
+   
+
+    /**
+     * Recibe una lista de objetos Partido, obtiene sus ids y los convierte a
+     * cadena de texto separados por comas
+     *
+     * @param partidos
+     * @return una lista separada por comas de los ids de los partidos
+     */
     private String partidosListToCSVIds(ArrayList<Partido> partidos) {
         String[] partidosArray = new String[partidos.size()];
         for (int i = 0; i < partidos.size(); i++) {
