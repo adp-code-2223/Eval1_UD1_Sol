@@ -29,10 +29,7 @@ public class MainUD1 {
     private static final String ELECCIONES_OUTPUT_FILE_CSV_BK = Paths.get("src", "docs", "elecciones_output.csv.bk").toString();
     private static final String ELECCIONES_OUTPUT_FILE_CSV = Paths.get("src", "docs", "elecciones_output.csv").toString();
 
-    /**
-     * @param args the command line arguments
-     * @throws es.teis.data.exceptions.LecturaException
-     */
+   
     public static void main(String[] args) {
 
         ArrayList<Partido> partidos;
