@@ -15,12 +15,14 @@ import java.util.ArrayList;
 public interface IXMLService {
 
     public static final String PARTIDO_TAG = "partido";
+    public static final String PARTIDOS_TAG = "partidos";
     public static final String PARTIDO_VOTOS_NUM_TAG = "votos_numero";
     public static final String PARTIDO_VOTOS_PORC_TAG = "votos_porciento";
     public static final String PARTIDO_NOMBRE_TAG = "nombre";
 
     public static final String PARTIDO_ATT_ID = "id";
 
-     ArrayList<Partido> leerPartidos(String ruta, float umbral) throws LecturaException;
+    ArrayList<Partido> leerPartidos(String ruta) throws LecturaException;
 
+    void escribir(ArrayList<Partido> partidos, String ruta);
 }

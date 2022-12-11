@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partidos>
+    <partido id="18">
+        <votos_porciento>32.51</votos_porciento>
+        <nombre>PP</nombre>
+    </partido>
+    <partido id="19">
+        <votos_porciento>31.97</votos_porciento>
+        <nombre>PSdeG</nombre>
+    </partido>
+    <partido id="3">
+        <votos_porciento>23.34</votos_porciento>
+        <nombre>BNG</nombre>
+    </partido>
+    <partido id="17">
+        <votos_porciento>6.08</votos_porciento>
+        <nombre>PODEMOS-EU-ANOVA</nombre>
+    </partido>
+    <partido id="25">
+        <votos_porciento>2.15</votos_porciento>
+        <nombre>VOX</nombre>
+    </partido>
+    <partido id="7">
+        <votos_porciento>1.23</votos_porciento>
+        <nombre>Cs</nombre>
+    </partido>
+</partidos>

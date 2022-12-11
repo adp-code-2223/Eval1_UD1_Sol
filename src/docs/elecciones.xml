@@ -55,55 +55,6 @@
             <votos_numero>1671</votos_numero>
             <votos_porciento>1.23</votos_porciento>
         </partido>
-       <partido id="14">
-            <nombre>PACMA</nombre>
-            <votos_numero>919</votos_numero>
-            <votos_porciento>0.68</votos_porciento>
-        </partido>
-       <partido id="9">
-            <nombre>EN MAREA-CPG-PG</nombre>
-            <votos_numero>355</votos_numero>
-            <votos_porciento>0.26</votos_porciento>
-        </partido>
-       <partido id="23">
-            <nombre>UNIDOS SI-UDP-DEf</nombre>
-            <votos_numero>235</votos_numero>
-            <votos_porciento>0.17</votos_porciento>
-        </partido>
-       <partido id="1">
-            <nombre>ADCG</nombre>
-            <votos_numero>233</votos_numero>
-            <votos_porciento>0.17</votos_porciento>
-        </partido>
-       <partido id="8">
-            <nombre>EB</nombre>
-            <votos_numero>166</votos_numero>
-            <votos_porciento>0.12</votos_porciento>
-        </partido>
-       <partido id="11">
-            <nombre>EQUO</nombre>
-            <votos_numero>161</votos_numero>
-            <votos_porciento>0.12</votos_porciento>
-        </partido>
-       <partido id="22">
-            <nombre>RECORTES CERO-ESCO-OV-M</nombre>
-            <votos_numero>129</votos_numero>
-            <votos_porciento>0.1</votos_porciento>
-        </partido>
-       <partido id="15">
-            <nombre>PCTG</nombre>
-            <votos_numero>127</votos_numero>
-            <votos_porciento>0.09</votos_porciento>
-        </partido>
-       <partido id="21">
-            <nombre>PUM+J</nombre>
-            <votos_numero>112</votos_numero>
-            <votos_porciento>0.08</votos_porciento>
-        </partido>
-       <partido id="24">
-            <nombre>UPYD</nombre>
-            <votos_numero>89</votos_numero>
-            <votos_porciento>0.07</votos_porciento>
-        </partido>
+        
     </resultados>
 </escrutinio_sitio>

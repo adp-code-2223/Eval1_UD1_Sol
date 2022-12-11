@@ -17,12 +17,25 @@ public class Partido implements Serializable {
     private int votos;
     private float porcentaje;
 
+    public Partido() {
+    }
+    
+    
+
     public Partido(long id, String nombre, int votos, float porcentaje) {
         this.id = id;
         this.nombre = nombre;
         this.votos = votos;
         this.porcentaje = porcentaje;
     }
+      public Partido( String nombre, int votos, float porcentaje) {
+      
+        this.nombre = nombre;
+        this.votos = votos;
+        this.porcentaje = porcentaje;
+    }
+
+    
 
     public long getId() {
         return id;
