@@ -27,9 +27,9 @@ public class CSVPersistencia implements IPersistencia {
         } catch (IOException ex) {
             System.err.println("Ha ocurrido una excepción: " + ex.getMessage());
         }
-
+     /* Se usa FileWriter para crear archivo de texto (de caracteres). Se usa BufferedReader para mayor eficiencia. */
     }
-
+    
    
 
     /**
