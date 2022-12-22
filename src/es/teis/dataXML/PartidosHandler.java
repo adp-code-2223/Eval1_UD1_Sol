@@ -54,10 +54,10 @@ public class PartidosHandler extends DefaultHandler {
             case IXMLService.PARTIDO_TAG:
                 partido = new Partido();
                 partidos.add(partido);
-                partido.setId(Integer.parseInt(attributes.getValue(IXMLService.PARTIDO_ATT_ID)));
+                partido.setId(Long.parseLong(attributes.getValue(IXMLService.PARTIDO_ATT_ID)));
                 break;
-            case IXMLService.PARTIDO_NOMBRE_TAG:
-            case IXMLService.PARTIDO_VOTOS_NUM_TAG:
+            case IXMLService.PARTIDO_NOMBRE_TAG:   
+            case IXMLService.PARTIDO_VOTOS_NUM_TAG:   
             case IXMLService.PARTIDO_VOTOS_PORC_TAG:
                 buffer.delete(0, buffer.length());
                 break;
